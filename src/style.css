@@ -1,1 +1,82 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.poker-card {
+  width: 60px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid black;
+}
+
+.spade,
+.club,
+.diamond,
+.heart {
+  padding: 0;
+}
+.spade::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "♠";
+  color: black;
+}
+
+.spade::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "♠";
+  color: black;
+}
+
+.club::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "♣";
+  color: black;
+}
+
+.club::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "♣";
+  color: black;
+}
+
+.diamond::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "♦";
+  color: red;
+}
+
+.diamond::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "♦";
+  color: red;
+}
+
+.heart::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "♥";
+  color: red;
+}
+
+.heart::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "♥";
+  color: red;
+}
